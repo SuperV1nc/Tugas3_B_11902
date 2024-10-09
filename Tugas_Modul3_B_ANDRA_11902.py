@@ -73,8 +73,8 @@ if uploaded_file is not None:
     st.write("<h3 style='text-align: center; color: #00736e;'>Data yang diupload:</h3>", unsafe_allow_html=True)
     st.dataframe(input_data)
 
-    model_directory = r'D:\UAJY Kuliah Andra 220711902\Matkul\Semester 5\Pembelajaran Mesin dan Pembelajaran Mendalam B\4 Supervised Learning\Model Suprevised Learning (Praktek)\Tugas3_B_11902'
-    model_path = os.path.join(model_directory, r'SVR_IPK_model.pkl')
+    #model_directory = r'D:\UAJY Kuliah Andra 220711902\Matkul\Semester 5\Pembelajaran Mesin dan Pembelajaran Mendalam B\4 Supervised Learning\Model Suprevised Learning (Praktek)\Tugas3_B_11902'
+    model ='SVR_IPK_model.pkl'
 
     if os.path.exists(model_path):
         with open(model_path, 'rb') as file:
